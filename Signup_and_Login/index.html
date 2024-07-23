@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Signup and Login</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <header>
+    <div class="title">
+      <h1>QUIZ APPLICATION</h1>
+    </div>
+  </header>
+  <main>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-12 col-lg-7 " id="left-col">
+          <div class="content">
+            <h1>Welcome to Quiz App!</h1>
+            <p>Explore, learn, and have fun with our engaging quizzes. Whether you're a trivia enthusiast or looking to test your knowledge, our app has something for everyone.</p>
+            <br>
+            <h2>Sign Up for More Fun</h2>
+            <p>Join our community by creating an account. It's quick and easy!</p>
+            <h2>Already Have an Account?</h2>
+            <p>Log in to access personalized quizzes and track your progress. <br>
+                Get started now and challenge yourself with our diverse range of quizzes! 
+            </p>
+          </div>
+        </div>
+        <div class="col-12 col-lg-5" id="right-col">
+          <!--- Signup Html Code --->
+            <div class="container" id="signupContainer">
+              <h2>Signup</h2>
+              <i class="fas fa-user-circle user-icon"></i>
+              <form id="signupForm">
+                <input type="text" id="signupName" placeholder="Name" required>
+                <input type="email" id="signupEmail" placeholder="Email" required>
+                <input type="password" id="signupPassword" placeholder="Password" required>
+                <input type="password" id="signupConfirmPassword" placeholder="Confirm Password" required>
+                <button type="submit">Signup</button>
+              </form>
+              <div class="switch-button" id="showLoginForm">Already have an account? Login</div>
+            </div>
+  
+            <!--- Login Html Code --->
+            <div class="container" id="loginContainer" style="display: none;">
+              <h2>Login</h2>
+              <i class="fas fa-user-circle user-icon"></i>
+              <form id="loginForm">
+                <input type="email" id="loginEmail" placeholder="Email" required>
+                <input type="password" id="loginPassword" placeholder="Password" required>
+                <button type="submit">Login</button>
+              </form>
+              <div class="switch-button" id="showSignupForm">Don't have an account? Signup</div>
+            </div>
+                  </div>
+                </div>
+    </div>
+  </main>
+  <hr>
+  <footer>
+      <div class="footer-content">
+        <div class="developer">
+          <h4>Developed By: <strong>ALI RAZA</strong></h4>
+        </div>
+        <p>@Copy 2024 Quiz App. All rights reserved.</p>
+      </div>
+  </footer>
+<script src="./app.js"></script>
+</body>
+</html>
